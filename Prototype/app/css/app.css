@@ -362,7 +362,7 @@ body {
   color: #222;
   padding: 0;
   margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: normal;
   font-style: normal;
   line-height: 1.5;
@@ -1190,7 +1190,7 @@ select {
       color: #222222;
       padding: 1rem;
       display: block;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Exo 2", sans-serif;
       font-size: 1rem; }
       .accordion .accordion-navigation > a:hover, .accordion dd > a:hover {
         background: #e3e3e3; }
@@ -1583,7 +1583,7 @@ button, .button {
   border-style: solid;
   border-width: 0px;
   cursor: pointer;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2809,7 +2809,7 @@ select {
   border-color: #cccccc;
   padding: 0.5rem;
   font-size: 0.875rem;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Exo 2", sans-serif;
   color: rgba(0, 0, 0, 0.75);
   line-height: normal;
   border-radius: 0;
@@ -3215,7 +3215,7 @@ label.error {
 
 .label {
   font-weight: normal;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Exo 2", sans-serif;
   text-align: center;
   text-decoration: none;
   line-height: 1;
@@ -3595,7 +3595,7 @@ ul.pagination {
     color: #EEEEEE;
     font-weight: normal;
     font-size: 1rem;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: "Exo 2", sans-serif; }
   .pricing-table .price {
     background-color: #F6F6F6;
     padding: 0.9375rem 1.25rem;
@@ -3603,7 +3603,7 @@ ul.pagination {
     color: #333333;
     font-weight: normal;
     font-size: 2rem;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+    font-family: "Exo 2", sans-serif; }
   .pricing-table .description {
     background-color: #FFFFFF;
     padding: 0.9375rem;
@@ -3875,7 +3875,7 @@ dialog {
   padding: 0.875rem 0;
   list-style-type: none;
   list-style-position: outside;
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+  font-family: "Exo 2", sans-serif; }
   .side-nav li {
     margin: 0 0 0.4375rem 0;
     font-size: 0.875rem;
@@ -3891,7 +3891,7 @@ dialog {
     .side-nav li.active > a:first-child:not(.button) {
       color: #1ccaff;
       font-weight: normal;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif; }
+      font-family: "Exo 2", sans-serif; }
     .side-nav li.divider {
       border-top: 1px solid;
       height: 0;
@@ -3999,7 +3999,7 @@ dialog {
     display: inline;
     margin-left: 1rem;
     margin-bottom: 0;
-    font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+    font-family: "Exo 2", sans-serif;
     font-weight: normal;
     font-size: 0.875rem;
     color: #999999; }
@@ -4170,7 +4170,7 @@ table {
       background-color: #EFEFEF;
       color: #222222;
       padding: 1rem 2rem;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Exo 2", sans-serif;
       font-size: 1rem; }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background-color: #e1e1e1; }
@@ -4468,7 +4468,7 @@ meta.foundation-mq-topbar {
       color: #FFFFFF;
       padding: 12px 0 12px 0;
       padding-left: 15px;
-      font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+      font-family: "Exo 2", sans-serif;
       font-size: 0.8125rem;
       font-weight: normal;
       text-transform: none; }
@@ -4955,7 +4955,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-weight: normal;
   font-style: normal;
   color: #222222;
@@ -5879,3 +5879,83 @@ th.hide-for-touch {
     display: table-cell !important; } }
 
 /* all app scss styles here */
+body {
+  background-color: #222;
+  color: white; }
+
+.top {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+  padding-top: 2rem;
+  height: 50%;
+  max-width: none; }
+  .top:before, .top:after {
+    content: " ";
+    display: table; }
+  .top:after {
+    clear: both; }
+  .top .left {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    height: 100%; }
+    .top .left h1 {
+      color: #47BBB3;
+      font-size: 4rem; }
+    .top .left .counter .inner {
+      background-color: #47BBB3; }
+  .top .right {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    background-color: blue; }
+
+.bottom {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  max-width: 62.5rem;
+  height: 50%;
+  max-width: none; }
+  .bottom:before, .bottom:after {
+    content: " ";
+    display: table; }
+  .bottom:after {
+    clear: both; }
+  .bottom .left {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    background-color: red; }
+  .bottom .right {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+    width: 50%;
+    float: left;
+    background-color: blue; }
+
+.counter {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+  .counter .inner {
+    /*    margin-left: 0.05rem;
+    margin-right: 0.05rem;*/
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem; }
+  .counter h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.75rem;
+    text-align: center; }
+  .counter p {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center; }

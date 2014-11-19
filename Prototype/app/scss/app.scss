@@ -3,7 +3,7 @@
 
 // Make sure the charset is set appropriately
 @charset "UTF-8";
-
+$body-font-family: "Exo 2", sans-serif;
 // Behold, here are all the Foundation components.
 @import
   "foundation/components/grid",
@@ -45,3 +45,68 @@
   "foundation/components/visibility";
 
   @import "appstyles";
+$bg : #222;
+$blue : #47BBB3;
+$purple : #9C4274;
+$orange : #EC663C;
+$yellow : #FFA73D;
+body {
+  background-color: $bg;
+  color: white;
+}
+.top {
+  @include grid-row();
+  padding-top: 2rem;
+  height: 50%;
+  max-width: none;
+  .left {
+    @include grid-column(6);
+    height: 100%;
+    //background-color: red;
+    h1 {
+      color: $blue;
+      font-size: 4rem;
+    }
+    .counter .inner {
+      background-color: $blue;
+    }
+  }
+  .right {
+    @include grid-column(6);
+    background-color: blue;
+  }    
+}
+.bottom {
+  @include grid-row();
+  height: 50%;
+  max-width: none;
+  .left {
+    @include grid-column(6);
+    background-color: red;
+  }
+  .right {
+    @include grid-column(6);
+    background-color: blue;
+  }    
+}
+
+.counter {
+  .inner {
+/*    margin-left: 0.05rem;
+    margin-right: 0.05rem;*/
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  h2 {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.75rem;
+    text-align: center;
+  }
+  p {
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+  }
+}
