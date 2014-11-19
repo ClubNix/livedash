@@ -50,13 +50,14 @@ $blue : #47BBB3;
 $purple : #9C4274;
 $orange : #EC663C;
 $yellow : #FFA73D;
+$yellow: #FF9618;
 body {
   background-color: $bg;
   color: white;
 }
 .top {
   @include grid-row();
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   height: 50%;
   max-width: none;
   .left {
@@ -66,15 +67,106 @@ body {
     h1 {
       color: $blue;
       font-size: 4rem;
+      font-weight: 300;
+      font-style: normal;
     }
-    .counter .inner {
+    .counter .inner, .twitter {
       background-color: $blue;
     }
+    .row:first-of-type {
+      margin-bottom: 1rem;
+    }
+    .twitter-container {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .twitter {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      .title {
+        p {
+          font-size: 3rem;
+          text-align: center;
+        }
+        h2 {
+          font-size: 1.75rem;
+          text-align: center;
+        }    
+      }
+      .content {
+        p {
+          font-size: 1.2rem;
+          text-align: left;
+          margin-bottom: 0.2rem;
+          margin-top: 0.3rem;
+        }
+        h2 {
+          font-size: 1.75rem;
+          text-align: right;
+        }      
+      }
+      h2 {
+        color: rgba(255,255,255,0.7);
+      }
+      p {
+        color: #fff;
+      }
+    }    
   }
   .right {
     @include grid-column(6);
-    background-color: blue;
-  }    
+    height: 100%;
+    //background-color: red;
+    h1 {
+      color: $purple;
+      font-size: 4rem;
+      font-weight: 300;
+      font-style: normal;
+    }
+    .counter .inner, .twitter {
+      background-color: $purple;
+    }
+    .row:first-of-type {
+      margin-bottom: 1rem;
+    }
+    .twitter-container {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .twitter {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      .title {
+        p {
+          font-size: 3rem;
+          text-align: center;
+        }
+        h2 {
+          font-size: 1.75rem;
+          text-align: center;
+        }    
+      }
+      .content {
+        p {
+          font-size: 1.2rem;
+          text-align: left;
+          margin-bottom: 0.2rem;
+          margin-top: 0.3rem;
+        }
+        h2 {
+          font-size: 1.75rem;
+          text-align: right;
+        }      
+      }
+      h2 {
+        color: rgba(255,255,255,0.7);
+      }
+      p {
+        color: #fff;
+      }
+    }
+  }
+  
 }
 .bottom {
   @include grid-row();
@@ -82,11 +174,76 @@ body {
   max-width: none;
   .left {
     @include grid-column(6);
-    background-color: red;
+    height: 100%;
+    //background-color: red;
+    h1 {
+      color: $yellow;
+      font-size: 4rem;
+      font-weight: 300;
+      font-style: normal;
+    }
+    .counter .inner{
+      background-color: $yellow;
+    }
+    .counter .inner.second {
+      margin-top: 1rem;
+    }
+    .row:first-of-type {
+      margin-bottom: 1rem;
+    }       
   }
   .right {
     @include grid-column(6);
-    background-color: blue;
+    height: 100%;
+    //background-color: red;
+    h1 {
+      color: $orange;
+      font-size: 4rem;
+      font-weight: 300;
+      font-style: normal;
+    }
+    .counter .inner, .twitter {
+      background-color: $orange;
+    }
+    .row:first-of-type {
+      margin-bottom: 1rem;
+    }
+    .twitter-container {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    .twitter {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+      .title {
+        p {
+          font-size: 3rem;
+          text-align: center;
+        }
+        h2 {
+          font-size: 1.75rem;
+          text-align: center;
+        }    
+      }
+      .content {
+        p {
+          font-size: 1.2rem;
+          text-align: left;
+          margin-bottom: 0.2rem;
+          margin-top: 0.3rem;
+        }
+        h2 {
+          font-size: 1.75rem;
+          text-align: right;
+        }      
+      }
+      h2 {
+        color: rgba(255,255,255,0.7);
+      }
+      p {
+        color: #fff;
+      }
+    }
   }    
 }
 
@@ -94,8 +251,8 @@ body {
   .inner {
 /*    margin-left: 0.05rem;
     margin-right: 0.05rem;*/
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
   }
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -103,10 +260,12 @@ body {
     color: rgba(255,255,255,0.7);
     font-size: 1.75rem;
     text-align: center;
+    font-style: italic;
   }
   p {
     color: #fff;
     font-size: 3rem;
     text-align: center;
+    font-weight: 700;
   }
 }

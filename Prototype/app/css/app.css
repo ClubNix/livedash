@@ -5890,7 +5890,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
   max-width: 62.5rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
   height: 50%;
   max-width: none; }
   .top:before, .top:after {
@@ -5906,15 +5906,76 @@ body {
     height: 100%; }
     .top .left h1 {
       color: #47BBB3;
-      font-size: 4rem; }
-    .top .left .counter .inner {
+      font-size: 4rem;
+      font-weight: 300;
+      font-style: normal; }
+    .top .left .counter .inner, .top .left .twitter {
       background-color: #47BBB3; }
+    .top .left .row:first-of-type {
+      margin-bottom: 1rem; }
+    .top .left .twitter-container {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem; }
+    .top .left .twitter {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; }
+      .top .left .twitter .title p {
+        font-size: 3rem;
+        text-align: center; }
+      .top .left .twitter .title h2 {
+        font-size: 1.75rem;
+        text-align: center; }
+      .top .left .twitter .content p {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 0.2rem;
+        margin-top: 0.3rem; }
+      .top .left .twitter .content h2 {
+        font-size: 1.75rem;
+        text-align: right; }
+      .top .left .twitter h2 {
+        color: rgba(255, 255, 255, 0.7); }
+      .top .left .twitter p {
+        color: #fff; }
   .top .right {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 50%;
     float: left;
-    background-color: blue; }
+    height: 100%; }
+    .top .right h1 {
+      color: #9C4274;
+      font-size: 4rem;
+      font-weight: 300;
+      font-style: normal; }
+    .top .right .counter .inner, .top .right .twitter {
+      background-color: #9C4274; }
+    .top .right .row:first-of-type {
+      margin-bottom: 1rem; }
+    .top .right .twitter-container {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem; }
+    .top .right .twitter {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; }
+      .top .right .twitter .title p {
+        font-size: 3rem;
+        text-align: center; }
+      .top .right .twitter .title h2 {
+        font-size: 1.75rem;
+        text-align: center; }
+      .top .right .twitter .content p {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 0.2rem;
+        margin-top: 0.3rem; }
+      .top .right .twitter .content h2 {
+        font-size: 1.75rem;
+        text-align: right; }
+      .top .right .twitter h2 {
+        color: rgba(255, 255, 255, 0.7); }
+      .top .right .twitter p {
+        color: #fff; }
 
 .bottom {
   width: 100%;
@@ -5935,13 +5996,57 @@ body {
     padding-right: 0.9375rem;
     width: 50%;
     float: left;
-    background-color: red; }
+    height: 100%; }
+    .bottom .left h1 {
+      color: #FF9618;
+      font-size: 4rem;
+      font-weight: 300;
+      font-style: normal; }
+    .bottom .left .counter .inner {
+      background-color: #FF9618; }
+    .bottom .left .counter .inner.second {
+      margin-top: 1rem; }
+    .bottom .left .row:first-of-type {
+      margin-bottom: 1rem; }
   .bottom .right {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
     width: 50%;
     float: left;
-    background-color: blue; }
+    height: 100%; }
+    .bottom .right h1 {
+      color: #EC663C;
+      font-size: 4rem;
+      font-weight: 300;
+      font-style: normal; }
+    .bottom .right .counter .inner, .bottom .right .twitter {
+      background-color: #EC663C; }
+    .bottom .right .row:first-of-type {
+      margin-bottom: 1rem; }
+    .bottom .right .twitter-container {
+      padding-right: 0.5rem;
+      padding-left: 0.5rem; }
+    .bottom .right .twitter {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; }
+      .bottom .right .twitter .title p {
+        font-size: 3rem;
+        text-align: center; }
+      .bottom .right .twitter .title h2 {
+        font-size: 1.75rem;
+        text-align: center; }
+      .bottom .right .twitter .content p {
+        font-size: 1.2rem;
+        text-align: left;
+        margin-bottom: 0.2rem;
+        margin-top: 0.3rem; }
+      .bottom .right .twitter .content h2 {
+        font-size: 1.75rem;
+        text-align: right; }
+      .bottom .right .twitter h2 {
+        color: rgba(255, 255, 255, 0.7); }
+      .bottom .right .twitter p {
+        color: #fff; }
 
 .counter {
   padding-left: 0.5rem;
@@ -5949,13 +6054,15 @@ body {
   .counter .inner {
     /*    margin-left: 0.05rem;
     margin-right: 0.05rem;*/
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem; }
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem; }
   .counter h2 {
     color: rgba(255, 255, 255, 0.7);
     font-size: 1.75rem;
-    text-align: center; }
+    text-align: center;
+    font-style: italic; }
   .counter p {
     color: #fff;
     font-size: 3rem;
-    text-align: center; }
+    text-align: center;
+    font-weight: 700; }
